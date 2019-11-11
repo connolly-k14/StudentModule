@@ -58,5 +58,5 @@ public:
 
 	// Task 6 - Modify to reflect changes to vector
 	void ToString() const;
-	std::string Student::CalculateClassification() const;
+	std::string CalculateClassification() const;
 };
