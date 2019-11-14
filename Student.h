@@ -55,8 +55,9 @@ public:
 	void AddModule(Module m);
 	void DeleteModule(std::string moduleCode);
 	void UpdateModule(std::string moduleTitle, std::string moduleCode, int moduleCreditPoints, int moduleMark);
-
+	
 	// Task 6 - Modify to reflect changes to vector
 	void ToString() const;
 	std::string CalculateClassification() const;
+	int ReturnNoOfModules() const;
 };

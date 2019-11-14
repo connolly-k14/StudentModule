@@ -67,6 +67,7 @@ int Student::GetYearofStudy() const {
 	return yearofStudy_;
 }
 
+
 // Task 6 - Need to modify the class to incorporate the use of vector
 // To print the module name and marks for each module
 void Student::ToString() const {
@@ -109,6 +110,11 @@ std::string Student::CalculateClassification() const {
 		return "1st class";
 }
 
+int Student::ReturnNoOfModules() const
+{
+	return (int)moduleMarks_.size();
+}
+
 void Student::AddModule(Module m) {
 	moduleMarks_.push_back(m);
 }
@@ -138,3 +144,4 @@ void Student::UpdateModule(std::string moduleTitle, std::string moduleCode, int 
 		}
 	}
 }
+
